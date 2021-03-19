@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="MuncipalityButton" maxWidth="150.0" minWidth="100.0" mnemonicParsing="false" onAction="#muncipalityAction" text="Muncipality" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></Button>
+      <Button fx:id="userButton" maxWidth="150.0" minWidth="100.0" mnemonicParsing="false" onAction="#userAction" text="Users" GridPane.rowIndex="2" />
+      <Button fx:id="buildingButton" maxWidth="150.0" minWidth="100.0" mnemonicParsing="false" onAction="#buildingAction" text="Buildings" GridPane.rowIndex="3" />
+      <Label text="Choose where to go :" />
+      <Button fx:id="buttonExit" maxWidth="200.0" minWidth="100.0" mnemonicParsing="false" onAction="#buttonExit" text="Back" GridPane.rowIndex="6" />
+      <Button fx:id="idJobs" maxWidth="150.0" minWidth="100.0" mnemonicParsing="false" onAction="#idJobs" text="Jobs" GridPane.rowIndex="4" />
+      <Button fx:id="updateProfile" maxWidth="150.0" mnemonicParsing="false" onAction="#updateProfile" text="Update Profile" GridPane.rowIndex="5" />
+   </children>
+</GridPane>

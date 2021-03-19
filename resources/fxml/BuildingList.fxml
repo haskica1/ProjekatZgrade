@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="672.0" minWidth="10.0" prefWidth="672.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="304.0" minWidth="10.0" prefWidth="270.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="76.4" minHeight="10.0" prefHeight="66.4" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="273.4" minHeight="10.0" prefHeight="273.4" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="128.40000000000003" minHeight="8.400000000000034" prefHeight="8.400000000000034" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="128.40000000000003" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="buidlingList" maxWidth="672.0" prefHeight="274.0" prefWidth="672.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="36.0" text="ID" />
+          <TableColumn fx:id="adress" prefWidth="90.0" text="Adress" />
+            <TableColumn fx:id="flats" prefWidth="37.0" text="Flats" />
+            <TableColumn fx:id="flors" prefWidth="39.0" text="Floors" />
+            <TableColumn fx:id="yearOfBuilt" prefWidth="84.0" text="Year of Built" />
+            <TableColumn fx:id="type" prefWidth="94.0" text="Type" />
+            <TableColumn fx:id="elevators" prefWidth="128.0" text="Number of Elevators" />
+            <TableColumn fx:id="garages" prefWidth="55.0" text="Garages" />
+            <TableColumn fx:id="headOfBulding" prefWidth="108.0" text="Head of Building" />
+        </columns>
+      </TableView>
+      <VBox alignment="CENTER" prefHeight="274.0" prefWidth="208.0" spacing="36.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="addBuilding" minWidth="150.0" mnemonicParsing="false" onAction="#addAction" prefHeight="12.0" prefWidth="150.0" text="Add Building" />
+            <Button fx:id="changeBuilding" minWidth="150.0" mnemonicParsing="false" onAction="#changeBuilding" text="Change Building" />
+            <Button fx:id="deleteBuilding" minWidth="150.0" mnemonicParsing="false" onAction="#deleteBuilding" text="Delete Building" />
+            <Button fx:id="details" minWidth="150.0" mnemonicParsing="false" onAction="#details" text="Details" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="255.0">
+               <buttons>
+                  <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#ActionButtonBack" prefHeight="30.0" text="Back" />
+                  <Button fx:id="exit" alignment="CENTER" minWidth="49.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="37.0" prefWidth="176.0" text="Exit" />
+               </buttons>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
