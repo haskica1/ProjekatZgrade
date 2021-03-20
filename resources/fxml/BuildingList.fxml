@@ -12,7 +12,6 @@
     <RowConstraints maxHeight="76.4" minHeight="10.0" prefHeight="66.4" vgrow="SOMETIMES" />
     <RowConstraints maxHeight="273.4" minHeight="10.0" prefHeight="273.4" vgrow="SOMETIMES" />
     <RowConstraints maxHeight="128.40000000000003" minHeight="8.400000000000034" prefHeight="8.400000000000034" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="128.40000000000003" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
       <TableView fx:id="buidlingList" maxWidth="672.0" prefHeight="274.0" prefWidth="672.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
@@ -40,8 +39,8 @@
          <children>
             <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="255.0">
                <buttons>
-                  <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#ActionButtonBack" prefHeight="30.0" text="Back" />
-                  <Button fx:id="exit" alignment="CENTER" minWidth="49.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="37.0" prefWidth="176.0" text="Exit" />
+                  <Button fx:id="buttonBack" minHeight="-Infinity" minWidth="200.0" mnemonicParsing="false" onAction="#ActionButtonBack" prefHeight="25.0" prefWidth="179.0" text="Back" />
+                  <Button fx:id="exit" alignment="CENTER" minWidth="200.0" mnemonicParsing="false" onAction="#exitAction" text="Exit" />
                </buttons>
             </ButtonBar>
          </children>

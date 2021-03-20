@@ -24,7 +24,7 @@ class RegisterControllerTest {
 
     @Start
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/register.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Register.fxml"));
         ctrl = new RegisterController();
         loader.setController(ctrl);
         Parent root = loader.load();

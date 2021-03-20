@@ -12,7 +12,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/register.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Register.fxml"));
         RegisterController ctrl = new RegisterController();
         loader.setController(ctrl);
         Parent root = loader.load();
@@ -21,7 +21,6 @@ public class Main extends Application {
         primaryStage.show();
 
     }
-
 
     public static void main(String[] args) {
         launch(args);
